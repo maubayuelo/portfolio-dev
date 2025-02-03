@@ -24,12 +24,12 @@ const UXUIDetails = () => {
   const location = useLocation();
 
   const handleNavigation = (sectionId) => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/dev/") {
       // If already on the homepage, scroll to the section
       document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
     } else {
       // Navigate to the homepage and then scroll
-      navigate("/");
+      navigate("/dev/");
       setTimeout(() => {
         document
           .getElementById(sectionId)
@@ -579,7 +579,7 @@ const UXUIDetails = () => {
           </div>
         </FadeInSection>
 
-        <div className="content">
+        <div className="content padding-bottom-md">
           <h3 className="type-sz-xsm type-bold type-uppercase margin-top-md margin-bottom-sm">
             Impact
           </h3>
@@ -668,10 +668,10 @@ const UXUIDetails = () => {
           </div>
 
           <a
-            className="btn btn_comp type-uppercase type-bold margin-top-lg center-block"
+            className="btn btn_comp type-uppercase type-bold margin-top-lg center-block margin-bottom-xlg"
             onClick={() => handleNavigation("section_portfolio")}
           >
-            <i className="fa-solid fa-arrow-left margin-right-xsm"></i> Go To
+            <i className="fa-solid fa-arrow-left margin-right-xsm "></i> Go To
             Portfolio
           </a>
         </div>

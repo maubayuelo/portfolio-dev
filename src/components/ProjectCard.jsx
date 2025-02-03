@@ -35,14 +35,14 @@ const ProjectCard = ({ project }) => {
           <p className="margin-bottom-sm">{description}</p>
         </FadeInSection>
         <FadeInSection>
-          <p className="type-sz-caption margin-bottom-xsm">Made with:</p>
+          <p className="type-sz-caption no-margin-bottom">Made with:</p>
         </FadeInSection>
 
         <div className="cont_row margin-bottom-md">
           {tags.map((tag, index) => (
             <>
               <FadeInSection>
-                <span key={index} className="tag">
+                <span key={index} className="tag  margin-top-sm">
                   {tag}
                 </span>
               </FadeInSection>

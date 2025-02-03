@@ -9,9 +9,9 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/dev/" element={<HomePage />} />
         <Route
-          path="/project-meditation-app"
+          path="/dev/project-meditation-app"
           element={<ProjectMeditationApp />}
         />
       </Routes>

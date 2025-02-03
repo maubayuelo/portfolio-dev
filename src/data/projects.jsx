@@ -60,7 +60,7 @@ export const projects = [
     tags: ["Lean UX", "Figma", "Adobe CC", "Balsamiq MockUps", "Midjourney"],
     githubLink: "",
     liveLink: "",
-    internalLink: "/project-meditation-app",
+    internalLink: "/dev/project-meditation-app",
   },
   {
     title: "FrontEnd Developer Portfolio",

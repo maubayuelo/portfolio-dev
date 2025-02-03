@@ -9,12 +9,12 @@ const NavBar = () => {
   const location = useLocation();
 
   const handleNavigation = (sectionId) => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/dev/") {
       // If already on the homepage, scroll to the section
       document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
     } else {
       // Navigate to the homepage and then scroll
-      navigate("/");
+      navigate("/dev/");
       setTimeout(() => {
         document
           .getElementById(sectionId)
@@ -37,7 +37,7 @@ const NavBar = () => {
     <nav className="nav padding-top-md padding-bottom-md">
       <div className="container">
         <FadeInSection>
-          <Link to="/" className="logo">
+          <Link to="/dev/" className="logo">
             <img src={MauricioLogo} alt="Logo" />
           </Link>
         </FadeInSection>
