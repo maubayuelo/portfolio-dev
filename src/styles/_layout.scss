@@ -1,0 +1,106 @@
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $black;
+  min-height: 100vh;
+  color: $grey-2;
+}
+
+header{
+  .container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include for-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.container-hero{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  h2, h3{
+    color:$white;
+  }
+  .content{
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    img{
+      border-radius: 9px;
+      width: 100%;
+    }
+    ul{
+      list-style:disc;
+      list-style-position: outside;
+      li{
+        padding-left:15px;
+      }
+    }
+  }
+  .content-img {
+    width: 100%;
+    margin: 0 auto;
+    img{
+      border-radius: 9px;
+      width: 100%;
+    }
+  }
+  .portfolio-grid{
+    display: flex;
+    flex-direction: column;
+    @include for-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .portfolio-project {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      @include for-tablet {
+        width: calc(50% - 12px);
+      }
+      @include for-desktop {
+        width: calc(50% - 24px);
+      }
+
+      .portfolio-visual-link{
+        margin-bottom:15px;
+        background-color: $black;
+        border-radius: 9px;
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+        @include for-tablet {
+          margin-bottom:0px;
+          width: auto;
+        }
+        .portfolio-visual{
+          border-radius: 9px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+

@@ -1,0 +1,29 @@
+.slider-container {
+    width: 100%; /* Adjust to fit your design */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 50px; /* Space between items */
+    width: fit-content;
+    animation: scroll infinite linear 20s;
+  }
+  
+  .slider-item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

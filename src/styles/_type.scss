@@ -1,0 +1,147 @@
+/* TYPE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+$font-size: 18px;
+$ratio: 1.2;
+/* Calculate values */
+$paragraph: calc($font-size * $ratio);
+$caption: calc($font-size / $ratio);
+$caption-2: calc($caption / $ratio);
+$xsmall: 21px;
+$h4: 24px;
+$h3: 30px;
+$h2: 36px;
+$h1: 51px;
+$font_sans_serif: 'Inter', sans-serif;
+
+/* FONT SIZES */
+p {
+  font-family: $font_sans_serif;
+  font-size: $paragraph;
+  line-height: calc($paragraph * 1.3);
+  margin-bottom: calc($paragraph / $ratio);
+}
+.type-sz-caption-2 {
+  font-family: $font_sans_serif;
+  font-size: $caption-2;
+  line-height: calc($caption * $ratio);
+  margin-bottom: calc($caption / $ratio);
+}
+.type-sz-caption, .caption, figcaption {
+  font-family: $font_sans_serif;
+  font-size: $caption;
+  line-height: calc($paragraph * $ratio);
+  margin-bottom: calc($paragraph / $ratio);
+}
+
+.type-sz-xsm {
+  font-family: $font_sans_serif;
+  font-size: $xsmall;
+  line-height: calc($paragraph * $ratio);
+  margin-bottom: calc($paragraph / $ratio);
+}
+
+.type-sz-default {
+  font-family: $font_sans_serif;
+  font-size: $paragraph;
+  line-height: calc($paragraph * $ratio);
+  margin-bottom: calc($paragraph / $ratio);
+}
+
+.type-sz-sm {
+  font-family: $font_sans_serif;
+  font-size: $h4;
+  margin-bottom: calc($paragraph / $ratio);
+  @include for-desktop {
+    font-size: calc($h4 * $ratio);
+  }
+}
+
+.type-sz-md {
+  font-family: $font_sans_serif;
+  font-size: $h3;
+  margin-bottom: $paragraph;
+  @include for-desktop {
+    font-size: calc($h3 * $ratio);
+  }
+}
+
+.type-sz-lg {
+  font-family: $font_sans_serif;
+  font-size: $h2;
+  margin-bottom: $paragraph;
+  @include for-desktop {
+    font-size: calc($h2 * $ratio);
+  }
+}
+
+.type-sz-xlg {
+  font-family: $font_sans_serif;
+  font-size: $h1;
+  margin-bottom: $paragraph;
+  @include for-desktop {
+    font-size: calc($h1 * $ratio);
+  }
+}
+
+/* FONT APPEARANCES */
+
+.type-title-tag {
+  margin-top: 6px;
+  padding-bottom: 3px;
+  font-size: calc($paragraph / $ratio);
+  display: inline-block;
+  clear: both;
+  border-bottom: 1px solid $grey-3;
+  @include for-desktop {
+    margin-top: 15px;
+  }
+}
+
+.type-uppercase {
+  text-transform: uppercase;
+}
+
+.type-bold {
+  font-weight: 800;
+}
+
+.type-regular {
+  font-weight: 500;
+}
+
+.type-no-decoration {
+  text-decoration: none;
+}
+
+.type-no-margin {
+  margin-bottom: 0;
+}
+
+/* FONT COLOR */
+
+.type-white {
+  color: $white;
+}
+.type-black {
+  color: $black;
+}
+.type-primary {
+  color: $primary;
+}
+
+.type-center {
+  text-align: center;
+}
+
+/* LIST */
+
+ul {
+  margin-left: 20px;
+  li::marker {
+    font-size: 150%;
+    color: $primary;
+  }
+}

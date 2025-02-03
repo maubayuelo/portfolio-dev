@@ -1,0 +1,137 @@
+
+
+
+a {
+  font-family: $font_sans_serif;
+  color: $grey-3;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  &:hover{
+  }
+}
+a:active,
+a:focus,
+a:hover {
+  color: $white;
+}
+
+a {
+  img, .ico {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+  &:hover{
+    img {
+      opacity: 0.3;
+    }
+    .ico{
+      opacity: 0.5;
+    }
+  }
+}
+
+
+//input[type=submit],
+.btn, {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  width: 100%;
+  min-width: fit-content;
+  border: 3px solid $white;
+  color: $black;
+  background-color: $white;
+  box-sizing: border-box;
+  line-height: 1em;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  max-width: fit-content;
+  padding: 12px;
+  border-radius: 24px;
+  @include for-desktop {
+    padding: 15px;
+  border-radius: 30px;
+  }
+  &:hover{
+    color: $white;
+    background-image: linear-gradient(0deg,$black);
+    background-color: $tiertary;
+    border: 3px solid $tiertary;
+  }
+  &.btn_comp {
+    padding: 3px 6px;
+    @include for-tablet {
+      padding: 6px 9px;
+    }
+  }
+  &.btn_outline{
+    color: $white;
+    background-color: transparent;
+    border: 3px solid $white;
+    &:hover{
+      color: $white;
+      border: 3px solid $tiertary;
+      background-color:$tiertary;
+      //box-shadow: rgba($primary, 0.45) 0px 3px 9px;
+    }
+  }
+  &.btn_primary{
+    color: $white;
+    background-color: $primary;
+    background-image: linear-gradient( 270deg,  $primary 6%, $tiertary 94% );
+    border: 3px solid $tiertary;
+    &:hover{
+      color:$white;
+      border: 3px solid $tiertary;
+      background-image: linear-gradient($tiertary 0%, $tiertary 100%);
+      background-color:$tiertary;
+      //box-shadow: rgba($primary, 0.45) 0px 3px 9px;
+    }
+  }
+}
+
+
+
+
+
+.tag {
+  font-family: $font_sans_serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: fit-content;
+  border-radius: 15px;
+  box-sizing: border-box;
+  line-height: 1em;
+  padding: 6px 9px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  max-width: fit-content;
+  font-size: small;
+  font-weight: 700;
+  border: 2px solid $grey-3;
+  color: $grey-3;
+  margin-right: 9px;
+}
+
+.cont_row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  .btn:first-child{
+    margin-right: 18px;
+  }
+}

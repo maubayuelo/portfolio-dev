@@ -1,0 +1,48 @@
+@import  '../styles/app';
+
+nav, .nav{
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //background-color: $grey-9;
+    backdrop-filter: blur(0%);
+    transition: all 0.5s ease;
+    &.scrolled {
+      backdrop-filter: blur(6px);
+    }
+    .logo{
+      display: flex;
+      width: 75px;
+      img{
+        display: flex;
+        width: 100%;
+      }
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include for-tablet {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .nav-links-row{
+        display:flex;
+        @include for-tablet {
+          margin-top:0;
+        }
+        a{
+          &:first-child{
+            margin-right: 15px;
+            @include for-tablet {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

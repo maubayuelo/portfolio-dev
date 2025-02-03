@@ -1,0 +1,47 @@
+
+
+
+// Media Queries
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: $device-large) {
+    @content;
+  }
+}
+
+// Flexbox Center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Scrollbar Styling
+@mixin custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: $grey-3 $grey-6;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $grey-6;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-3;
+    border-radius: $border-radius;
+  }
+}

@@ -1,0 +1,18 @@
+@import  '../styles/app';
+
+header{
+    &.header-project{
+      margin-top: 75px;
+      @include for-tablet {
+        margin-top: 90px;
+      }
+    }
+    .container{
+      .project-tag{
+        color: $grey-4;
+      }
+    }
+  }
+  
+
+  

@@ -1,0 +1,215 @@
+$space_sm: 15px;
+$space_md: calc($space_sm * 2);
+$space_lg: calc($space_md * 2);
+$space_xlg: calc($space_sm * 3);
+
+.margin-top{
+  &-xsm{
+    margin-top: 3px;
+  }
+  &-sm{
+    margin-top: 15px;
+    @include for-tablet {
+      margin-top: $space_sm;
+    }
+  }
+  &-md{
+    margin-top: calc($space_md / 2);
+    @include for-tablet {
+      margin-top: $space_md;
+    }
+  }
+  &-lg{
+    margin-top: calc($space_lg / 2);
+    @include for-tablet {
+      margin-top: $space_lg;
+    }
+  }
+  &-xlg{
+    margin-top: calc($space_xlg / 2);
+    @include for-tablet {
+      margin-top: $space_xlg;
+    }
+  }
+}
+
+.margin-bottom{
+  &-xsm{
+    margin-bottom: 3px;
+  }
+  &-sm{
+    margin-bottom: calc($space_sm / 2);
+    @include for-tablet {
+      margin-bottom: $space_sm;
+    }
+  }
+  &-md{
+    margin-bottom: $space_md;
+    @include for-tablet {
+      margin-bottom: $space_md;
+    }
+  }
+  &-lg{
+    margin-bottom: $space_lg;
+    @include for-tablet {
+      margin-bottom: $space_lg;
+    }
+  }
+  &-xlg{
+    margin-bottom: $space_xlg;
+  }
+}
+
+.margin-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-right{
+  &-xxsm{
+    margin-right: 3px;
+  }
+  &-xsm{
+    margin-right: calc($space_sm / 2);
+  }
+  &-sm{
+    margin-right: calc($space_sm / 2);
+    @include for-tablet {
+      margin-right: $space_sm;
+    }
+  }
+  &-md{
+    margin-right: $space_md;
+    @include for-tablet {
+      margin-right: $space_md;
+    }
+  }
+  &-lg{
+    margin-right: $space_lg;
+    @include for-tablet {
+      margin-right: $space_lg;
+    }
+  }
+  &-xlg{
+    margin-right: $space_xlg;
+  }
+}
+
+.margin-left{
+  &-xxsm{
+    margin-left: 3px;
+  }
+  &-xsm{
+    margin-left: calc($space_sm / 2);
+  }
+  &-sm{
+    margin-left: calc($space_sm / 2);
+    @include for-tablet {
+      margin-left: $space_sm;
+    }
+  }
+  &-md{
+    margin-left: $space_md;
+    @include for-tablet {
+      margin-left: $space_md;
+    }
+  }
+  &-lg{
+    margin-left: $space_lg;
+    @include for-tablet {
+      margin-left: $space_lg;
+    }
+  }
+  &-xlg{
+    margin-left: $space_xlg;
+  }
+}
+
+
+.padding-top{
+  &-xsm{
+    padding-top: 3px;
+  }
+  &-sm{
+    padding-top: calc($space_sm / 2);
+    @include for-tablet {
+      padding-top: $space_sm;
+    }
+  }
+  &-md{
+    padding-top: calc($space_md / 2);
+    @include for-tablet {
+      padding-top: $space_md;
+    }
+  }
+  &-lg{
+    padding-top: calc($space_lg / 2);
+    @include for-tablet {
+      padding-top: $space_lg;
+    }
+  }
+  &-xlg{
+    padding-top: calc($space_xlg / 2);
+    @include for-tablet {
+      padding-top: $space_xlg;
+    }
+  }
+}
+
+.padding-bottom{
+  &-xsm{
+    padding-bottom: 3px;
+  }
+  &-sm{
+    padding-bottom: calc($space_sm / 2);
+    @include for-tablet {
+      padding-bottom: $space_sm;
+    }
+  }
+  &-md{
+    padding-bottom: calc($space_md / 2);
+    @include for-tablet {
+      padding-bottom: $space_md;
+    }
+  }
+  &-lg{
+    padding-bottom: calc($space_lg / 2);
+    @include for-tablet {
+      padding-bottom: $space_lg;
+    }
+  }
+  &-xlg{
+    padding-bottom: calc($space_xlg / 2);
+    @include for-tablet {
+      padding-bottom: $space_xlg;
+    }
+  }
+}
+
+.no{
+  &-margin{
+    margin: 0;
+  }
+  &-margin-top{
+    margin-top: 0px;
+  }
+  &-margin-bottom{
+    margin-bottom: 0px;
+  }
+}
+
+
+img.img-sz-initial{
+  width: initial !important;
+}
+
+.center-block{
+  display: flex;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-color-primary{
+  background-color: $primary;
+}
