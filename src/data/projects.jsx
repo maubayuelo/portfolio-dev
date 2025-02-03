@@ -68,7 +68,7 @@ export const projects = [
     description:
       "Led UX/UI design for a freemium meditation app, emphasizing a calm and user-friendly experience. Used Figma for prototyping and detailed visual design exploration.",
     tags: ["ReactJS", "Rct Router", "FontAwesome", "GSAP", "Vite", "Axios"],
-    githubLink: "",
+    githubLink: "https://github.com/maubayuelo/portfolio-dev",
     liveLink: "",
     internalLink: "",
   },
