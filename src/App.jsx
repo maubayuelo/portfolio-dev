@@ -6,12 +6,12 @@ import ProjectMeditationApp from "./pages/ProjectMeditationApp";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 function App() {
   return (
-    <Router>
+    <Router basename="/dev">
       <NavBar />
       <Routes>
-        <Route path="/dev/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route
-          path="/dev/project-meditation-app"
+          path="/project-meditation-app/"
           element={<ProjectMeditationApp />}
         />
       </Routes>

@@ -36,10 +36,10 @@ const InfiniteSlider = () => {
 
   return (
     <div className="slider-container">
-      <div className="slider margin-top-lg" ref={sliderRef}>
+      <div className="slider margin-top-md" ref={sliderRef}>
         {[...icons, ...icons].map((icon, index) => (
           <div key={index} className="slider-item">
-            <i className={`fab fa-${icon} fa-5x`}></i>
+            <i className={`fab fa-${icon} fa-3x`}></i>
           </div>
         ))}
       </div>

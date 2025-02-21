@@ -1,27 +1,10 @@
 {
-    "name": "Mauricio Bayuelo Portfolio",
-    "short_name": "Portfolio",
-    "description": "Mauricio Bayuelo's UX/UI Developer and Designer Portfolio showcasing projects and skills.",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#48dbfb",
-    "icons": [
-      {
-        "src": "/apple-touch-icon.png",
-        "sizes": "180x180",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicon-32x32.png",
-        "sizes": "32x32",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicon-16x16.png",
-        "sizes": "16x16",
-        "type": "image/png"
-      }
-    ]
+    "name": "Mauricio Bayuelo | UX/UI Designer And Developer",
+  "short_name": "Mauricio Bayuelo | UX/UI",
+  "theme_color": "#333333",
+  "background_color": "#333333",
+  "display": "browser",
+  "scope": "https://mauriciobayuelo.com/dev/",
+  "start_url": "https://mauriciobayuelo.com/dev/"
   }
   

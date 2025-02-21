@@ -1,9 +1,9 @@
 export const projects = [
   {
     title: "Headless Blog, Shamanicca",
-    image: "https://i3.ytimg.com/vi/ur_laJEQVjM/maxresdefault.jpg",
+    image: "project-headdless-blog.jpg",
     description:
-      "A ReactJS Vite-based frontend for a headless WordPress blog destined to support ecommerce and affiliate marketing strategies, integrating REST API endpoints to display blog posts, categories, search results, and other dynamic content.",
+      "Headless WordPress blog destined to support affiliate marketing strategies, integrating REST API endpoints to display posts, categories, search results, and other dynamic content.",
     tags: [
       "ReactJS",
       "Rct Router",
@@ -12,15 +12,15 @@ export const projects = [
       "SCSS",
       "WP REST API",
     ],
-    githubLink: "https://github.com/headless-blog",
-    liveLink: "https://headless-blog.com",
+    githubLink: "https://github.com/maubayuelo/Shamanicca-Headless-Blog",
+    liveLink: "https://shamanicca.com",
     internalLink: "",
   },
   {
     title: "Projects And Tasks App",
-    image: "https://i3.ytimg.com/vi/32mlaEkrhZk/maxresdefault.jpg",
+    image: "project-pm-app.jpg",
     description:
-      "Minimalist project management tool inspired in Trello App, enabling users to create, edit, organize and track projects and tasks.",
+      "Responsive minimalist project management tool inspired in Trello App and his  kanban-style columns, enabling users to create, edit, organize and track projects and tasks.",
     tags: [
       "ReactJS",
       "JavaScript ES6",
@@ -36,8 +36,8 @@ export const projects = [
   },
   {
     title: "Shamanicca, Bio Page",
-    image: "https://i3.ytimg.com/vi/BX6koyeSdz4/maxresdefault.jpg",
-    description: `Shamanicca Bio Page is a React.js application designed to showcase brand identity, meditation playlists, blog articles, and products promotions in a visually engaging and interactive format. It integrates YouTube and WordPress API for dynamic content updates.`,
+    image: "project-bio-page.jpg",
+    description: `Shamanicca Instagram BioPage is a ReactJS web app designed to showcase brand identity, meditation playlists, blog articles, and products promotions in a visually engaging and interactive format. It integrates YouTube and WordPress API for dynamic content updates.`,
     tags: [
       "ReactJS",
       "Tailwind CSS",
@@ -48,15 +48,15 @@ export const projects = [
       "WordPress REST API",
     ],
     githubLink: "https://github.com/maubayuelo/shamanicca-bio.git",
-    liveLink: "https://shamanicca.com/bio/",
+    liveLink: "https://shamanicca.com/bioIG/",
     internalLink: "",
   },
 
   {
     title: "Meditation App, UX/UI Design",
-    image: "https://i3.ytimg.com/vi/48YwaTiYau0/maxresdefault.jpg",
+    image: "project-meditation-app.jpg",
     description:
-      "Led UX/UI design for a freemium meditation app, emphasizing a calm and user-friendly experience. Used Figma for prototyping and detailed visual design exploration.",
+      "UX/UI design for a freemium meditation app, emphasizing a calm and user-friendly experience for busy users. Used Figma for prototyping and detailed visual design exploration. The App focus is oriented to display subliminal audios tools and sacred codes meditations.",
     tags: ["Lean UX", "Figma", "Adobe CC", "Balsamiq MockUps", "Midjourney"],
     githubLink: "",
     liveLink: "",
@@ -64,9 +64,9 @@ export const projects = [
   },
   {
     title: "FrontEnd Developer Portfolio",
-    image: "https://i3.ytimg.com/vi/48YwaTiYau0/maxresdefault.jpg",
+    image: "project-portfolio.jpg",
     description:
-      "Led UX/UI design for a freemium meditation app, emphasizing a calm and user-friendly experience. Used Figma for prototyping and detailed visual design exploration.",
+      "Sleek and responsive current portfolio website built with ReactJS. This project showcases developer web skills, modern UI/UX design, optimized performance, and seamless navigation.",
     tags: ["ReactJS", "Rct Router", "FontAwesome", "GSAP", "Vite", "Axios"],
     githubLink: "https://github.com/maubayuelo/portfolio-dev",
     liveLink: "",

@@ -8,7 +8,7 @@
     display: flex;
     gap: 50px; /* Space between items */
     width: fit-content;
-    animation: scroll infinite linear 20s;
+    animation: scroll infinite linear 30s;
   }
   
   .slider-item {
@@ -23,7 +23,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-30%);
     }
   }
   

@@ -36,7 +36,7 @@ const HomePage = () => {
         </FadeInSection>
         <div className="portfolio-grid margin-top-lg">
           {projects.map((project, index) => (
-            <ProjectCard project={project} key={index} />
+            <ProjectCard project={project} key={project.title} />
           ))}
         </div>
       </main>

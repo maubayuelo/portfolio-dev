@@ -16,13 +16,17 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="portfolio-project margin-bottom-md">
       <a
-        href={liveLink || "#"}
+        href={liveLink || githubLink || internalLink || "#"}
         className="portfolio-visual-link no-padding"
-        target="_blank"
-        rel="noopener noreferrer"
+        target={liveLink || githubLink ? "_blank" : ""}
+        rel={liveLink || githubLink ? "noopener noreferrer" : undefined}
       >
         <FadeInSection>
-          <img src={image} alt={title} className="portfolio-visual" />
+          <img
+            src={`${import.meta.env.BASE_URL}assets/images/${image}`}
+            alt={title}
+            className="portfolio-visual"
+          />
         </FadeInSection>
       </a>
       <div className="portfolio-sumary">

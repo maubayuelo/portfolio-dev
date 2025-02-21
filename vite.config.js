@@ -7,6 +7,7 @@ import viteImagemin from 'vite-plugin-imagemin';
 
 
 export default defineConfig({
+  base: '/dev/',
   plugins: [
     react(),
     viteImagemin({
@@ -37,6 +38,5 @@ export default defineConfig({
         ],
       },
     }),
-  ],
-  base: '/dev/',
+  ]
 });

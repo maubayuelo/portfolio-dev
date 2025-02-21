@@ -24,17 +24,19 @@ const UXUIDetails = () => {
   const location = useLocation();
 
   const handleNavigation = (sectionId) => {
-    if (location.pathname === "/dev/") {
+    if (location.pathname === "/") {
       // If already on the homepage, scroll to the section
       document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-    } else {
+    } else if (location.pathname !== "/" && sectionId == "section_portfolio") {
       // Navigate to the homepage and then scroll
-      navigate("/dev/");
+      navigate("/");
       setTimeout(() => {
         document
           .getElementById(sectionId)
           ?.scrollIntoView({ behavior: "smooth" });
       }, 100); // Delay to ensure the homepage has rendered
+    } else {
+      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
     }
   };
 

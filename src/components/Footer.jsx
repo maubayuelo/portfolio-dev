@@ -63,9 +63,10 @@ const Footer = () => {
 
             <a
               className="type-bold type-xsz-sm no-margin"
-              href="mauricio-bayuelo-cv-2023.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`${
+                import.meta.env.BASE_URL
+              }assets/mauricio-bayuelo-developer-cv.pdf`}
+              download="mauricio-bayuelo-developer-cv.pdf"
             >
               Download Mauricio's CV (PDF)
             </a>
@@ -88,6 +89,14 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <i className="fab fa-github fa-2x"></i>
+        </a>
+        <a
+          className="type-center"
+          href="https://www.instagram.com/mauriciobayuelo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-instagram fa-2x"></i>
         </a>
       </div>
     </footer>

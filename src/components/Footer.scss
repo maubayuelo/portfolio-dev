@@ -37,7 +37,8 @@ footer{
       &:last-child{
         //border-top: 1px solid $grey-6;
         a{
-          &:first-child{
+          &:first-child,
+          &:nth-child(2){
             margin-right: 30px;
           }
           &:link {
