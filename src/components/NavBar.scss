@@ -29,8 +29,10 @@ nav, .nav{
         justify-content: space-between;
         flex-direction: row;
       }
-      .nav-links-row{
+      .nav-links-row .fade-in-section{
+        //background-color: green;
         display:flex;
+        flex-direction: row;
         @include for-tablet {
           margin-top:0;
         }

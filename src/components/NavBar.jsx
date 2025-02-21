@@ -52,8 +52,7 @@ const NavBar = () => {
             >
               Portfolio
             </a>
-          </FadeInSection>
-          <FadeInSection>
+
             <a
               className="btn btn_comp btn_primary type-uppercase type-bold"
               onClick={() => handleNavigation("section_contact")}

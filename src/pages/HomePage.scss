@@ -4,16 +4,20 @@ header{
       overflow: hidden;
       background-size:auto 100%;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../assets/images/header-bg-sm.jpg');
       display: flex;
       align-items: center;
       width: 100%;
       padding-top: 100px;
       padding-bottom: 50px;
-      height: calc(75vh - 150px);
+      min-height: calc(75vh - 150px);
+      height: calc(100vh - 150px);
       flex-direction: column;
       justify-content: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../assets/images/header-bg-sm.jpg');
+      background-attachment: scroll;
+      -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+      image-rendering: -webkit-optimize-contrast;
       @include for-tablet {
         padding-top: 0;
         padding-bottom: 0;
@@ -73,7 +77,7 @@ header{
     height: 1px;
     position: absolute;
     z-index: 1000;
-    top:calc(75vh - 62px);
+    top: calc(100vh - 62px);
     @include for-tablet {
       top:calc(66vh - 94px);
     }
