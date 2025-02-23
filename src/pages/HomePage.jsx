@@ -15,9 +15,14 @@ const HomePage = () => {
             <img src={MauriciosPortrait} alt="Mauricio Bayuelo" />
           </FadeInSection>
           <FadeInSection>
-            <h1 className="type-sz-sm type-bold">
-              Empowering User Experiences with Front-End Development
-            </h1>
+            <div className="tagName">
+              <p className="type-sz-sx margin-bottom-sm">
+                UXUI Developer &amp; Designer, AI Powered.
+              </p>
+              <h1 className="type-sz-sm type-bold no-margin-bottom">
+                Upgrading User Experiences with Front-End Development.
+              </h1>
+            </div>
           </FadeInSection>
         </div>
 
