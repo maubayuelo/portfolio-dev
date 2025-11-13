@@ -1,29 +1,12 @@
-import React from "react";
+// import React from "react";
 import FadeInSection from "../components/FadeInSection";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import MauricioLogo from "/src/assets/images/mauricio-bayuelo-logo.svg"; // Import the logo
+import useSectionNavigation from "../hooks/useSectionNavigation";
 
 const NavBar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const handleNavigation = (sectionId) => {
-    if (location.pathname === "/") {
-      // If already on the homepage, scroll to the section
-      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-    } else if (location.pathname !== "/" && sectionId == "section_portfolio") {
-      // Navigate to the homepage and then scroll
-      navigate("/");
-      setTimeout(() => {
-        document
-          .getElementById(sectionId)
-          ?.scrollIntoView({ behavior: "smooth" });
-      }, 100); // Delay to ensure the homepage has rendered
-    } else {
-      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const handleNavigation = useSectionNavigation();
 
   // HEADER SCROLL TRANSITION
   document.addEventListener("scroll", function () {

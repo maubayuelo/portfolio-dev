@@ -1,5 +1,26 @@
 export const projects = [
   {
+    title: "Magneto Web Agency Site",
+    image: "project-portfolio.jpg",
+    description:
+      "Production-ready agency website using Next.js App Router and a component-driven design system; integrates GraphQL-powered content, Calendly scheduling, contact API routes, and SEO.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "SCSS Modules",
+      "React Context",
+      "Next.js API Routes",
+      "Vitest",
+      "ESLint",
+      "Vercel",
+    ],
+    githubLink: "https://github.com/maubayuelo/portfolio-dev",
+    liveLink: "https://www.magnetomarketing.co/",
+    internalLink: "",
+  },
+  {
     title: "Headless Blog, Shamanicca",
     image: "project-headdless-blog.jpg",
     description:
@@ -51,7 +72,24 @@ export const projects = [
     liveLink: "https://shamanicca.com/bioIG/",
     internalLink: "",
   },
-
+  {
+    title: "Shamanicca Ecommerce",
+    image: "project-bio-page.jpg",
+    description: `In‑progress D2C storefront using Next.js with a component-driven UI, product and shop pages, and integrations to WooCommerce for catalog/orders and Printful for on‑demand fulfillment.`,
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "SCSS/Sass",
+      "PostCSS",
+      "WooCommerce REST API",
+      "Printful API",
+      "Axios",
+    ],
+    githubLink: "https://github.com/maubayuelo/shamanicca-bio.git",
+    liveLink: "https://demo.shamanicca.com/",
+    internalLink: "",
+  },
   {
     title: "Meditation App, UX/UI Design",
     image: "project-meditation-app.jpg",
@@ -61,15 +99,5 @@ export const projects = [
     githubLink: "",
     liveLink: "",
     internalLink: "/dev/project-meditation-app",
-  },
-  {
-    title: "FrontEnd Developer Portfolio",
-    image: "project-portfolio.jpg",
-    description:
-      "Sleek and responsive current portfolio website built with ReactJS. This project showcases developer web skills, modern UI/UX design, optimized performance, and seamless navigation.",
-    tags: ["ReactJS", "Rct Router", "FontAwesome", "GSAP", "Vite", "Axios"],
-    githubLink: "https://github.com/maubayuelo/portfolio-dev",
-    liveLink: "",
-    internalLink: "",
   },
 ];

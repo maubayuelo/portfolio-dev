@@ -1,7 +1,7 @@
-@import  './_reset';
-@import  './_variables';
-@import  './_mixins';
-@import  './_type';
-@import  './_buttons';
-@import  './_helpers';
-@import  './_layout';
+@forward './reset';
+@forward './variables';
+@forward './mixins';
+@forward './type';
+@forward './buttons';
+@forward './helpers';
+@forward './layout';

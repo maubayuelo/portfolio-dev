@@ -1,8 +1,9 @@
 @use "sass:color";
+@use "sass:math";
 
 @function grey($shade: 0%) {
   // Convert unitless $shade to percentage
-  @if unitless($shade) {
+  @if math.is-unitless($shade) {
     $shade: $shade * 1%;
   }
 

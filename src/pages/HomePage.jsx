@@ -2,31 +2,76 @@
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import FadeInSection from "../components/FadeInSection";
-import MauriciosPortrait from "/src/assets/images/mauricio-pic.jpg"; // Import the logo
+import MauriciosPortrait from "/src/assets/images/mauricio-pic.png"; // Import the logo
 import InfiniteSlider from "../components/InfiniteSlider";
 import "./HomePage.scss";
+import useSectionNavigation from "../hooks/useSectionNavigation";
 
 const HomePage = () => {
+  const handleNavigation = useSectionNavigation();
   return (
     <>
       <header className="header-home">
         <div className="container padding-top-lg">
-          <FadeInSection>
+          <FadeInSection
+            repeat
+            threshold={0.5}
+            rootMargin="-10% 0px -10% 0px"
+            delay={0}
+          >
             <img src={MauriciosPortrait} alt="Mauricio Bayuelo" />
           </FadeInSection>
-          <FadeInSection>
-            <div className="tagName">
-              <p className="type-sz-sx margin-bottom-sm">
-                UXUI Developer &amp; Designer, AI Powered.
-              </p>
+
+          <div className="tagName">
+            <FadeInSection
+              repeat
+              threshold={0.5}
+              rootMargin="-10% 0px -10% 0px"
+              delay={150}
+            >
               <h1 className="type-sz-sm type-bold no-margin-bottom">
-                Upgrading User Experiences with Front-End Development.
+                Crafting Fast, Scalable Interfaces That Drive Conversions
               </h1>
-            </div>
-          </FadeInSection>
+            </FadeInSection>
+
+            <FadeInSection
+              repeat
+              threshold={0.5}
+              rootMargin="-10% 0px -10% 0px"
+              delay={300}
+            >
+              <p className="type-sz-sx margin-top-sm no-margin-bottom">
+                I&apos;m Mauricio — a front-end specialist using AI, design
+                thinking, and modern tools like React and Next.js to craft
+                smarter web experiences.
+              </p>
+            </FadeInSection>
+
+            <FadeInSection>
+              <div className="btn-group">
+                <a
+                  className="btn btn_outline type-uppercase type-bold type-sz-sx"
+                  onClick={() => handleNavigation("section_portfolio")}
+                >
+                  Check out my work
+                </a>
+                <a
+                  className="btn btn_primary type-uppercase type-bold type-sz-sx"
+                  onClick={() => handleNavigation("section_contact")}
+                >
+                  Contact me
+                </a>
+              </div>
+            </FadeInSection>
+          </div>
         </div>
 
-        <FadeInSection>
+        <FadeInSection
+          repeat
+          threshold={0.1}
+          rootMargin="20% 0px -5% 0px"
+          delay={450}
+        >
           <main className="container">
             <InfiniteSlider />
           </main>
@@ -34,13 +79,18 @@ const HomePage = () => {
       </header>
       <main className="container">
         <div className="section_portfolio" id="section_portfolio"></div>
-        <FadeInSection>
+        <FadeInSection
+          repeat
+          threshold={0.5}
+          rootMargin="-10% 0px -10% 0px"
+          delay={0}
+        >
           <h2 className="type-sz-sm type-center type-uppercase type-bold margin-top-lg">
             Portfolio
           </h2>
         </FadeInSection>
         <div className="portfolio-grid margin-top-lg">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard project={project} key={project.title} />
           ))}
         </div>

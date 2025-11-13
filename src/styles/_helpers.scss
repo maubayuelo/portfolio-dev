@@ -1,3 +1,5 @@
+@use './variables' as *;
+@use './mixins' as *;
 $space_sm: 15px;
 $space_md: calc($space_sm * 2);
 $space_lg: calc($space_md * 2);
