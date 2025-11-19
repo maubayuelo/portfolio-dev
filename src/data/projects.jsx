@@ -16,7 +16,7 @@ export const projects = [
       "ESLint",
       "Vercel",
     ],
-    githubLink: "https://github.com/maubayuelo/portfolio-dev",
+    githubLink: "https://github.com/maubayuelo/magneto-web-agency-site-GrapgQL",
     liveLink: "https://www.magnetomarketing.co/",
     internalLink: "",
   },
@@ -74,7 +74,7 @@ export const projects = [
   },
   {
     title: "Shamanicca Ecommerce",
-    image: "project-bio-page.jpg",
+    image: "project-ecommerce.jpg",
     description: `In‑progress D2C storefront using Next.js with a component-driven UI, product and shop pages, and integrations to WooCommerce for catalog/orders and Printful for on‑demand fulfillment.`,
     tags: [
       "Next.js",
@@ -83,11 +83,10 @@ export const projects = [
       "SCSS/Sass",
       "PostCSS",
       "WooCommerce REST API",
-      "Printful API",
       "Axios",
     ],
-    githubLink: "https://github.com/maubayuelo/shamanicca-bio.git",
-    liveLink: "https://demo.shamanicca.com/",
+    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
+    liveLink: "https://beta.shamanicca.com/",
     internalLink: "",
   },
   {

@@ -1,7 +1,16 @@
+@use "../styles/app" as *;
+
 .slider-container {
-    width: 100%; /* Adjust to fit your design */
+    width: 100%; /* Adjust to fit the design */
     overflow: hidden;
     position: relative;
+    margin-top: 30px;
+    @include for-tablet {
+      margin-top: 60px;
+    }
+    @include for-desktop {
+      margin-top: 60px;
+     }
   }
   
   .slider {

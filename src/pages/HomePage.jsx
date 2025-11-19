@@ -19,7 +19,13 @@ const HomePage = () => {
             rootMargin="-10% 0px -10% 0px"
             delay={0}
           >
-            <img src={MauriciosPortrait} alt="Mauricio Bayuelo" />
+            <div className="portrait-glitch">
+              <img
+                className="portrait-glitch__img"
+                src={MauriciosPortrait}
+                alt="Mauricio Bayuelo"
+              />
+            </div>
           </FadeInSection>
 
           <div className="tagName">
