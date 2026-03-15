@@ -90,6 +90,16 @@ export const projects = [
     internalLink: "",
   },
   {
+    title: "Trépied, Landing Page",
+    image: "project-trepied-landing-page.jpg",
+    description:
+      "Landing page for video production company. Process: client brief → Figma Make prototype → WordPress/PHP theme, responsive Tailwind CSS. Client-authorized preview, final content in progress",
+    tags: ["Figma / Figma Make", "WordPress / PHP", "ACF", "Tailwind CSS", "WPML", "API Integration", "JavaScript", "Lucide Icons", "YouTube Embed"],
+    githubLink: "https://github.com/maubayuelo/trepied-wp-theme",
+    liveLink: "https://trepied.magnetomarketing.co/",
+    internalLink: "",
+  },
+  {
     title: "Meditation App, UX/UI Design",
     image: "project-meditation-app.jpg",
     description:
@@ -98,5 +108,5 @@ export const projects = [
     githubLink: "",
     liveLink: "",
     internalLink: "/dev/project-meditation-app",
-  },
+  }
 ];
