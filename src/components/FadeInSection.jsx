@@ -14,6 +14,7 @@ const toMsString = (val, fallback) => {
 };
 
 const FadeInSection = ({
+  as: Tag = "div",
   children,
   delay = 0,
   exitDelay = 0,
@@ -36,7 +37,7 @@ const FadeInSection = ({
   const transitionDuration = toMsString(duration, "1000ms");
 
   return (
-    <div
+    <Tag
       ref={ref}
       className={`fade-in-section ${
         inView ? "visible" : ""
@@ -44,13 +45,14 @@ const FadeInSection = ({
       style={{ transitionDelay, transitionDuration, ...style }}
     >
       {children}
-    </div>
+    </Tag>
   );
 };
 
 export default FadeInSection;
 
 FadeInSection.propTypes = {
+  as: PropTypes.elementType,
   children: PropTypes.node,
   delay: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   exitDelay: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

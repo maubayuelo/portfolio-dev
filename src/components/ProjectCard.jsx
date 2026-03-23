@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import FadeInSection from "../components/FadeInSection";
 import "./ProjectCard.scss";
 
@@ -14,124 +15,77 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <div className="portfolio-project margin-bottom-md">
-      <a
-        href={liveLink || githubLink || internalLink || "#"}
-        className="portfolio-visual-link no-padding"
-        target={liveLink || githubLink ? "_blank" : ""}
-        rel={liveLink || githubLink ? "noopener noreferrer" : undefined}
-      >
-        <FadeInSection
-          repeat
-          threshold={0.5}
-          rootMargin="-10% 0px -10% 0px"
-          delay={0}
+    <FadeInSection
+      as="div"
+      className="portfolio-project margin-bottom-md"
+      repeat
+      threshold={0.2}
+      rootMargin="-5% 0px -5% 0px"
+    >
+      {internalLink && !liveLink && !githubLink ? (
+        <Link to={internalLink} className="portfolio-visual-link no-padding">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/images/${image}`}
+            alt={title}
+            className="portfolio-visual"
+          />
+        </Link>
+      ) : (
+        <a
+          href={liveLink || githubLink || "#"}
+          className="portfolio-visual-link no-padding"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src={`${import.meta.env.BASE_URL}assets/images/${image}`}
             alt={title}
             className="portfolio-visual"
           />
-        </FadeInSection>
-      </a>
+        </a>
+      )}
       <div className="portfolio-sumary">
-        <FadeInSection
-          repeat
-          threshold={0.5}
-          rootMargin="-10% 0px -10% 0px"
-          delay={120}
-        >
-          <h3 className="type-sz-sm type-bold margin-top-md margin-bottom-sm">
-            {title}
-          </h3>
-        </FadeInSection>
-        <FadeInSection
-          repeat
-          threshold={0.5}
-          rootMargin="-10% 0px -10% 0px"
-          delay={200}
-        >
-          <p className="margin-bottom-sm">{description}</p>
-        </FadeInSection>
-        <FadeInSection
-          repeat
-          threshold={0.5}
-          rootMargin="-10% 0px -10% 0px"
-          delay={240}
-        >
-          <p className="type-sz-caption no-margin-bottom">Developed with:</p>
-        </FadeInSection>
-
+        <h3 className="type-sz-sm type-bold margin-top-md margin-bottom-sm">
+          {title}
+        </h3>
+        <p className="margin-bottom-sm">{description}</p>
+        <p className="type-sz-caption no-margin-bottom">Developed with:</p>
         <div className="cont_row margin-bottom-md">
           {tags.map((tag, index) => (
-            <FadeInSection
-              key={index}
-              repeat
-              threshold={0.5}
-              rootMargin="-10% 0px -10% 0px"
-              delay={300 + index * 60}
-            >
-              <span className="tag  margin-top-sm">{tag}</span>
-            </FadeInSection>
+            <span key={index} className="tag margin-top-sm">{tag}</span>
           ))}
         </div>
         <div className="cont_row margin-bottom-md">
           {githubLink && (
-            <FadeInSection
-              repeat
-              threshold={0.5}
-              rootMargin="-10% 0px -10% 0px"
-              delay={360}
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn_outline type-uppercase type-bold"
             >
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn_outline type-uppercase type-bold"
-              >
-                View Repo{" "}
-                <i className="fab fa-github fa-lg margin-left-xsm"></i>
-              </a>
-            </FadeInSection>
+              View Repo{" "}
+              <i className="fab fa-github fa-lg margin-left-xsm"></i>
+            </a>
           )}
           {liveLink && (
-            <FadeInSection
-              repeat
-              threshold={0.5}
-              rootMargin="-10% 0px -10% 0px"
-              delay={420}
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn type-uppercase type-bold"
             >
-              <a
-                href={liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn type-uppercase type-bold"
-              >
-                See Project{" "}
-                <i className="fas fa-external-link-alt fa-lg margin-left-xsm"></i>
-              </a>
-            </FadeInSection>
+              See Project{" "}
+              <i className="fas fa-external-link-alt fa-lg margin-left-xsm"></i>
+            </a>
           )}
           {internalLink && (
-            <FadeInSection
-              repeat
-              threshold={0.5}
-              rootMargin="-10% 0px -10% 0px"
-              delay={480}
-            >
-              {" "}
-              <a
-                href={internalLink}
-                rel="noopener noreferrer"
-                className="btn type-uppercase type-bold"
-              >
-                Read Case Study
-              </a>
-            </FadeInSection>
+            <Link to={internalLink} className="btn type-uppercase type-bold">
+              Read Case Study
+            </Link>
           )}
         </div>
       </div>
-    </div>
+    </FadeInSection>
   );
 };
 

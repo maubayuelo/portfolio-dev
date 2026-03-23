@@ -1,7 +1,6 @@
-import React from "react";
 import "./ProjectMeditationApp.scss";
 import FadeInSection from "../components/FadeInSection";
-import { useNavigate, useLocation } from "react-router-dom";
+import useSectionNavigation from "../hooks/useSectionNavigation";
 
 import ProjectImg01 from "/src/assets/images/project-05-01.jpg";
 import ProjectImg02 from "/src/assets/images/project-05-02.jpg";
@@ -20,25 +19,7 @@ import ProjectImg14 from "/src/assets/images/project-05-14.jpg";
 import ProjectImg15 from "/src/assets/images/project-05-15.jpg";
 
 const UXUIDetails = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const handleNavigation = (sectionId) => {
-    if (location.pathname === "/") {
-      // If already on the homepage, scroll to the section
-      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-    } else if (location.pathname !== "/" && sectionId == "section_portfolio") {
-      // Navigate to the homepage and then scroll
-      navigate("/");
-      setTimeout(() => {
-        document
-          .getElementById(sectionId)
-          ?.scrollIntoView({ behavior: "smooth" });
-      }, 100); // Delay to ensure the homepage has rendered
-    } else {
-      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const handleNavigation = useSectionNavigation();
 
   return (
     <>
