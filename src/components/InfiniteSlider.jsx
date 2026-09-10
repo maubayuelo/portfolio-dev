@@ -1,26 +1,39 @@
+import {
+  SiReact,
+  SiNextdotjs,
+  SiJavascript,
+  SiTypescript,
+  SiGraphql,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiWordpress,
+  SiSupabase,
+  SiVercel,
+  SiGithub,
+} from "react-icons/si";
 import "./InfiniteSlider.scss";
 
 const icons = [
-  "html5",
-  "css3-alt",
-  "js",
-  "sass",
-  "bootstrap",
-  "react",
-  "node",
-  "php",
-  "wordpress",
-  "github",
-  "figma",
+  SiReact,
+  SiNextdotjs,
+  SiJavascript,
+  SiTypescript,
+  SiGraphql,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiWordpress,
+  SiSupabase,
+  SiVercel,
+  SiGithub,
 ];
 
 const InfiniteSlider = () => {
   return (
     <div className="slider-container">
       <div className="slider margin-top-md">
-        {[...icons, ...icons].map((icon, index) => (
+        {[...icons, ...icons].map((Icon, index) => (
           <div key={index} className="slider-item">
-            <i className={`fab fa-${icon} fa-3x`}></i>
+            <Icon className="slider-icon" />
           </div>
         ))}
       </div>

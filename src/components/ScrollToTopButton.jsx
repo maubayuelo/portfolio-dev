@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FiChevronUp } from "react-icons/fi";
 import "./ScrollToTopButton.scss";
 
 const ScrollToTopButton = () => {
@@ -29,7 +30,7 @@ const ScrollToTopButton = () => {
       className={`scroll-to-top ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
     >
-      <i className="fas fa-chevron-up"></i>
+      <FiChevronUp />
     </button>
   );
 };

@@ -1,4 +1,5 @@
 import "./ProjectMeditationApp.scss";
+import { FiArrowLeft } from "react-icons/fi";
 import FadeInSection from "../components/FadeInSection";
 import useSectionNavigation from "../hooks/useSectionNavigation";
 
@@ -654,7 +655,7 @@ const UXUIDetails = () => {
             className="btn btn_comp type-uppercase type-bold margin-top-lg center-block margin-bottom-xlg"
             onClick={() => handleNavigation("section_portfolio")}
           >
-            <i className="fa-solid fa-arrow-left margin-right-xsm "></i> Go To
+            <FiArrowLeft className="margin-right-xsm" /> Go To
             Portfolio
           </a>
         </div>

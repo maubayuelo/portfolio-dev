@@ -1,5 +1,65 @@
 export const projects = [
   {
+    title: "Dangel, Landing Page",
+    image: "project-dangel.jpg",
+    description:
+      "Trilingual landing page for a holistic therapy practice. Headless React + GraphQL architecture pulling client-editable content from WordPress/ACF, with booking integration, sanitized dynamic content, and Vitest test coverage.",
+    tags: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "GraphQL",
+      "Apollo Client",
+      "WordPress (Headless)",
+      "WPGraphQL",
+      "ACF Pro",
+      "WPML",
+      "Vitest",
+      "Testing Library",
+      "EmailJS",
+    ],
+    githubLink: "https://github.com/maubayuelo/Dangel-LandingPage",
+    liveLink: "https://dangelwellness.ca/",
+    internalLink: "",
+  },
+  {
+    title: "Projects And Tasks App",
+    image: "project-pm-app.jpg",
+    description:
+      "Responsive minimalist project management tool inspired in Trello App and his  kanban-style columns, enabling users to create, edit, organize and track projects and tasks.",
+    tags: [
+      "ReactJS",
+      "JavaScript ES6",
+      "Redux Toolkit",
+      "React Router",
+      "React Hooks",
+      "Tailwind CSS",
+      "Supabase",
+    ],
+    githubLink: "https://github.com/maubayuelo/milestone-legacy/",
+    liveLink: "https://mauriciobayuelo.com/milestone-legacy/",
+    internalLink: "",
+  },
+  {
+    title: "Shamanicca Ecommerce",
+    image: "project-ecommerce.jpg",
+    description: ` D2C storefront using Next.js with a component-driven UI, product and shop pages, and integrations to WooCommerce for catalog/orders and Printful for on‑demand fulfillment.`,
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "SCSS/Sass",
+      "PostCSS",
+      "WooCommerce REST API",
+      "Axios",
+    ],
+    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
+    liveLink: "https://beta.shamanicca.com/",
+    internalLink: "",
+  },
+  
+  
+  {
     title: "Magneto Web Agency Site",
     image: "project-portfolio.jpg",
     description:
@@ -21,41 +81,6 @@ export const projects = [
     internalLink: "",
   },
   {
-    title: "Headless Blog, Shamanicca",
-    image: "project-headdless-blog.jpg",
-    description:
-      "Headless WordPress blog destined to support affiliate marketing strategies, integrating REST API endpoints to display posts, categories, search results, and other dynamic content.",
-    tags: [
-      "ReactJS",
-      "Rct Router",
-      "Rct Helmet",
-      "Axios",
-      "SCSS",
-      "WP REST API",
-    ],
-    githubLink: "https://github.com/maubayuelo/Shamanicca-Headless-Blog",
-    liveLink: "https://shamanicca.com",
-    internalLink: "",
-  },
-  {
-    title: "Projects And Tasks App",
-    image: "project-pm-app.jpg",
-    description:
-      "Responsive minimalist project management tool inspired in Trello App and his  kanban-style columns, enabling users to create, edit, organize and track projects and tasks.",
-    tags: [
-      "ReactJS",
-      "JavaScript ES6",
-      "Redux Toolkit",
-      "React Router",
-      "React Hooks",
-      "Tailwind CSS",
-      "Supabase",
-    ],
-    githubLink: "https://github.com/maubayuelo/projects-and-tasks/",
-    liveLink: "https://mauriciobayuelo.com/ProjectsAndTasks/",
-    internalLink: "",
-  },
-  {
     title: "Shamanicca, Bio Page",
     image: "project-bio-page.jpg",
     description: `Shamanicca Instagram BioPage is a ReactJS web app designed to showcase brand identity, meditation playlists, blog articles, and products promotions in a visually engaging and interactive format. It integrates YouTube and WordPress API for dynamic content updates.`,
@@ -72,31 +97,15 @@ export const projects = [
     liveLink: "https://shamanicca.com/bioIG/",
     internalLink: "",
   },
-  {
-    title: "Shamanicca Ecommerce",
-    image: "project-ecommerce.jpg",
-    description: `In‑progress D2C storefront using Next.js with a component-driven UI, product and shop pages, and integrations to WooCommerce for catalog/orders and Printful for on‑demand fulfillment.`,
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "SCSS/Sass",
-      "PostCSS",
-      "WooCommerce REST API",
-      "Axios",
-    ],
-    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
-    liveLink: "https://beta.shamanicca.com/",
-    internalLink: "",
-  },
+  
   {
     title: "Trépied, Landing Page",
     image: "project-trepied-landing-page.jpg",
     description:
-      "Landing page for video production company. Process: client brief → Figma Make prototype → WordPress/PHP theme, responsive Tailwind CSS. Client-authorized preview, final content in progress",
+      "Landing page for video production company. Process: client brief → Figma Make prototype → WordPress/PHP theme, responsive Tailwind CSS.",
     tags: ["Figma / Figma Make", "WordPress / PHP", "ACF", "Tailwind CSS", "WPML", "API Integration", "JavaScript", "Lucide Icons", "YouTube Embed"],
     githubLink: "https://github.com/maubayuelo/trepied-wp-theme",
-    liveLink: "https://trepied.magnetomarketing.co/",
+    liveLink: "http://trepied.ca/",
     internalLink: "",
   },
   {
@@ -107,6 +116,23 @@ export const projects = [
     tags: ["Lean UX", "Figma", "Adobe CC", "Balsamiq MockUps", "Midjourney"],
     githubLink: "",
     liveLink: "",
-    internalLink: "/dev/project-meditation-app",
-  }
+    internalLink: "/project-meditation-app",
+  },
+    // {
+    //   title: "Headless Blog, Shamanicca",
+    //   image: "project-headdless-blog.jpg",
+    //   description:
+    //     "Legacy headless WordPress blog destined to support affiliate marketing strategies, integrating REST API endpoints to display posts, categories, search results, and other dynamic content.",
+    //   tags: [
+    //     "ReactJS",
+    //     "Rct Router",
+    //     "Rct Helmet",
+    //     "Axios",
+    //     "SCSS",
+    //     "WP REST API",
+    //   ],
+    //   githubLink: "https://github.com/maubayuelo/Shamanicca-Headless-Blog",
+    //   liveLink: "https://shamanicca.com",
+    //   internalLink: "",
+    // },
 ];

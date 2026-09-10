@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FiClipboard, FiDownload } from "react-icons/fi";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 import FadeInSection from "../components/FadeInSection";
 import "./Footer.scss";
 
@@ -45,7 +48,7 @@ const Footer = () => {
               id="mail_link"
               onClick={copyEmail}
             >
-              <i className="fas fa-clipboard fa-md margin-right-xsm"></i> Copy
+              <FiClipboard className="footer-icon margin-right-xsm" /> Copy
               Email To Clipboard
             </button>
             <div
@@ -59,7 +62,7 @@ const Footer = () => {
         </FadeInSection>
         <FadeInSection>
           <span className="footer-link margin-bottom-sm">
-            <i className="fas fa-download fa-md margin-right-xsm"></i>
+            <FiDownload className="footer-icon margin-right-xsm" />
 
             <a
               className="type-bold type-xsz-sm no-margin"
@@ -80,7 +83,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin fa-2x"></i>
+          <FaLinkedin className="footer-social-icon" />
         </a>
         <a
           className="type-center"
@@ -88,7 +91,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github fa-2x"></i>
+          <SiGithub className="footer-social-icon" />
         </a>
         <a
           className="type-center"
@@ -96,7 +99,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-instagram fa-2x"></i>
+          <FaInstagram className="footer-social-icon" />
         </a>
       </div>
     </footer>

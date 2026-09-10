@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { FiExternalLink } from "react-icons/fi";
+import { SiGithub } from "react-icons/si";
 import FadeInSection from "../components/FadeInSection";
 import "./ProjectCard.scss";
 
@@ -64,7 +66,7 @@ const ProjectCard = ({ project }) => {
               className="btn btn_outline type-uppercase type-bold"
             >
               View Repo{" "}
-              <i className="fab fa-github fa-lg margin-left-xsm"></i>
+              <SiGithub className="project-card-icon margin-left-xsm" />
             </a>
           )}
           {liveLink && (
@@ -75,7 +77,7 @@ const ProjectCard = ({ project }) => {
               className="btn type-uppercase type-bold"
             >
               See Project{" "}
-              <i className="fas fa-external-link-alt fa-lg margin-left-xsm"></i>
+              <FiExternalLink className="project-card-icon margin-left-xsm" />
             </a>
           )}
           {internalLink && (
