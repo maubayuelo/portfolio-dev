@@ -23,6 +23,25 @@ export const projects = [
     internalLink: "",
   },
   {
+    title: "Shamanicca Ecommerce",
+    image: "project-ecommerce.jpg",
+    description: `Next.js/TypeScript D2C storefront with headless WordPress/WooCommerce via WPGraphQL, automated testing, CI, and AI-assisted engineering workflows.`,
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "WPGraphQL",
+      "Apollo Client",
+      "WooCommerce",
+      "Vitest",
+      "GitHub Actions"
+    ],
+    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
+    liveLink: "https://beta.shamanicca.com/",
+    internalLink: "",
+  },
+  {
     title: "Projects And Tasks App",
     image: "project-pm-app.jpg",
     description:
@@ -40,25 +59,6 @@ export const projects = [
     liveLink: "https://mauriciobayuelo.com/milestone-legacy/",
     internalLink: "",
   },
-  {
-    title: "Shamanicca Ecommerce",
-    image: "project-ecommerce.jpg",
-    description: ` D2C storefront using Next.js with a component-driven UI, product and shop pages, and integrations to WooCommerce for catalog/orders and Printful for on‑demand fulfillment.`,
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "SCSS/Sass",
-      "PostCSS",
-      "WooCommerce REST API",
-      "Axios",
-    ],
-    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
-    liveLink: "https://beta.shamanicca.com/",
-    internalLink: "",
-  },
-  
-  
   {
     title: "Magneto Web Agency Site",
     image: "project-portfolio.jpg",
