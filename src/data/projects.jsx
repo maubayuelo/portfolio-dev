@@ -25,7 +25,7 @@ export const projects = [
   {
     title: "Shamanicca Ecommerce",
     image: "project-ecommerce.jpg",
-    description: `Next.js/TypeScript D2C storefront with headless WordPress/WooCommerce via WPGraphQL, automated testing, CI, and AI-assisted engineering workflows.`,
+    description: `Next.js/TypeScript D2C storefront with headless WordPress/WooCommerce via WPGraphQL, multilingual UX, automated testing, CI, performance optimization and AI-assisted workflows.`,
     tags: [
       "Next.js",
       "React",
@@ -37,9 +37,30 @@ export const projects = [
       "Vitest",
       "GitHub Actions"
     ],
-    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce",
-    liveLink: "https://beta.shamanicca.com/",
+    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce-graphql",
+    liveLink: "https://shamanicca.com/",
     internalLink: "",
+  },
+  {
+    title: "Shamanicca Design System",
+    image: "project-design-system.jpg",
+    description: "A design system reverse-engineered from a live Next.js storefront, then used to find and ship accessibility and consistency fixes through reviewed pull requests, each one checked by a pixel-level visual harness.",
+    tags: [
+      "Design System",
+      "Design Tokens",
+      "Component Variants",
+      "FigCraft",
+      "Tailwind CSS v4",
+      "WCAG AA",
+      "AI Harnessing",
+      "Visual Regression Testing",
+      "Playwright",
+      "GitHub Actions",
+      "Claude Code"
+    ],
+    githubLink: "https://github.com/maubayuelo/shamanicca-ecommerce-graphql",
+    liveLink: "",
+    internalLink: "/project-shamanicca-design-system",
   },
   {
     title: "Projects And Tasks App",
