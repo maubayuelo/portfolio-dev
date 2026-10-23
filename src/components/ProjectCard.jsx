@@ -57,7 +57,7 @@ const ProjectCard = ({ project }) => {
             <span key={index} className="tag margin-top-sm">{tag}</span>
           ))}
         </div>
-        <div className="cont_row margin-bottom-md">
+        <div className="cont_row portfolio-cta margin-bottom-md">
           {githubLink && (
             <a
               href={githubLink}
@@ -81,8 +81,12 @@ const ProjectCard = ({ project }) => {
             </a>
           )}
           {internalLink && (
-            <Link to={internalLink} className="btn type-uppercase type-bold">
-              Read Case Study
+            <Link
+              to={internalLink}
+              className="btn type-uppercase type-bold"
+              aria-label={`Read case study: ${title}`}
+            >
+              Case Study
             </Link>
           )}
         </div>

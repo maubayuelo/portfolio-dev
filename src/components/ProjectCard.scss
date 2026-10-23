@@ -1,5 +1,23 @@
+@use "../styles/app" as *;
+
 .project-card-icon {
   width: 1.33em;
   height: 1.33em;
   vertical-align: -0.2em;
+}
+
+// CTA row: wraps onto a second line with the same 18px gap both ways; buttons never break inside
+.cont_row.portfolio-cta {
+  gap: 18px;
+  .btn {
+    flex: 0 0 auto;
+    // same height as the icon buttons: icon (1.33em, .project-card-icon) + padding + 3px borders
+    min-height: calc(1.33em + 2 * 9px + 2 * 3px);
+    @include for-desktop {
+      min-height: calc(1.33em + 2 * 15px + 2 * 3px);
+    }
+  }
+  .btn:first-child {
+    margin-right: 0;
+  }
 }
