@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
       threshold={0.2}
       rootMargin="-5% 0px -5% 0px"
     >
-      {internalLink && !liveLink && !githubLink ? (
+      {internalLink ? (
         <Link to={internalLink} className="portfolio-visual-link no-padding">
           <img
             src={`${import.meta.env.BASE_URL}assets/images/${image}`}
