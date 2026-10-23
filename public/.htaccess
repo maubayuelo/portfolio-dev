@@ -1,0 +1,17 @@
+# SPA fallback for the React app served from /dev/
+# Real files and folders are served as-is; any other URL under /dev/ gets the app shell.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /dev/
+
+  # The app shell itself: serve directly
+  RewriteRule ^index\.html$ - [L]
+
+  # Missing build assets return a real 404 instead of the HTML shell
+  RewriteCond %{REQUEST_URI} !^/dev/assets/
+
+  # Anything that isn't an existing file or folder -> /dev/index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /dev/index.html [L]
+</IfModule>
